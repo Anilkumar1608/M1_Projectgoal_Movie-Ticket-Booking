@@ -1,8 +1,8 @@
-Features:-
-    Login to the system
-    View All movies
-    find your movie
-    Book your ticket.
+Features:
+Login to the system
+View All movies
+find your movie
+Book your ticket.
     
 State of art/Research:-
      Designing and implementing of movie ticket booking using basic programming.
