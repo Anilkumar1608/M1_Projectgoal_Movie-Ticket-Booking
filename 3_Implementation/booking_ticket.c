@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-char r;
+char k;
 void login()
 {
 	int a=0,i=0;
@@ -34,7 +34,7 @@ void login()
 		{
 			printf("\n\n\n   WELCOME TO OUR MOVIE TICKET BOOKING SYSTEM !!! LOGIN IS SUCCESSFUL");
 			printf("\n\n\n\t\t\tPress any key to continue....");
-			scanf("%c%c",&r,&r);
+			scanf("%c%c",&k,&k);
 			getch(); //It is for hold the screen
 			break;
 		}
@@ -49,7 +49,7 @@ void login()
 	if(a>2)
 	{
 		printf("\n Sorry you have entered the incorrect password for three times. Press to continue");
-		scanf("%c%c",&r,&r);
+		scanf("%c%c",&k,&k);
 		//getch();
 	}
 }
@@ -154,7 +154,7 @@ void find()
 	printf("Enter movie code:");
 	scanf("%s", ch);
 	
-	fp=fopen("data.txt","r");
+	fp=fopen("data.txt","k");
 	if(fp == NULL)
 	{
 		printf("file does not found !");
@@ -177,14 +177,14 @@ void find()
 	}
 	fclose(fp);
 	printf("\n\t\tPress enter to continue....");
-	scanf("%c%c",&r,&r);
+	scanf("%c%c",&k,&k);
 }
 
 void viewAll()
 {
 	char ch;
 	FILE *fp;
-	fp=fopen("data.txt","r");
+	fp=fopen("data.txt","k");
 	if(fp == NULL)
 	{
 		printf("file does not found !!");
@@ -196,7 +196,7 @@ void viewAll()
 		printf("%c", ch);
 	}
 	printf("\n\t\tPress enter to continue....");
-	scanf("%c%c",&r,&r);
+	scanf("%c%c",&k,&k);
 	fclose(fp);
 }
 
@@ -210,7 +210,7 @@ void book_ticket()
 	
 	char ch;   //It is used in displaying all movies
 	char movie_code[20];  // It is for searching
-	fp=fopen("data.txt","r");
+	fp=fopen("data.txt","k");
 	if(fp==NULL)
 	{
 		printf("file not found !!");
@@ -226,7 +226,7 @@ void book_ticket()
 	printf("\n For Booking Ticket Choice Movie(Enter Movie Code First Letter Of Movie)\n");
 	printf("\n Enter movie code :");
 	scanf("%s", movie_code);
-	fp=fopen("data.txt","r");
+	fp=fopen("data.txt","k");
 	if(fp==NULL)
 	{
 		printf("file not found !");
@@ -277,7 +277,7 @@ void book_ticket()
 	}
 	printf("\n");
 	printf("\n\t\tPress enter to continue....");
-	scanf("%c%c",&r,&r);
+	scanf("%c%c",&k,&k);
 	fclose(ufp);
 	fclose(fp);
 }
@@ -286,7 +286,7 @@ void old_record()
 {
 	char ch;
 	FILE *fp;
-	fp=fopen("oldTransaction.txt","r");
+	fp=fopen("oldTransaction.txt","k");
 	if(fp==NULL)
 	{
 		printf("File not found !");
@@ -298,6 +298,6 @@ void old_record()
 		printf("%c",ch);
 	}
 	printf("\n\t\tPress enter to continue...");
-	scanf("%c%c",&r,&r);
+	scanf("%c%c",&k,&k);
 	fclose(fp);
 }
