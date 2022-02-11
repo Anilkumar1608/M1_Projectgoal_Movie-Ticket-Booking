@@ -8,7 +8,13 @@ Online movie  Ticket booking
 
 [![Contribution check - Git inspector](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml/badge.svg)](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml)
 
+![code quality](https://api.codiga.io/project/31077/score/svg)
 
+![code grade](https://api.codiga.io/project/31077/status/svg)
+
+<a href="https://app.codiga.io/public/user/github/Anilkumar1608">
+   <img src="https://api.codiga.io/public/badge/user/github/Anilkumar1608?style=light" alt="codiga badge" />
+</a>
 
 ## References
  
