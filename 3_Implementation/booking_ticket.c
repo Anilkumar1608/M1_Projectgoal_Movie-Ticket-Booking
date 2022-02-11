@@ -12,10 +12,10 @@
 #include<stdlib.h>
 #include<string.h>
 
-char r;
+char k;
 void login()
 {
-	int a=0,i=0;
+	int h=0,i=0;
 	char username[10], c=' ';
 	char password[10], code[10];
 	char Username[10]="username";
@@ -44,22 +44,22 @@ void login()
 		{
 			printf("\n\n\n   WELCOME TO OUR MOVIE TICKET BOOKING SYSTEM !!! LOGIN IS SUCCESSFUL");
 			printf("\n\n\n\t\t\tPress any key to continue....");
-			scanf("%c%c",&r,&r);
+			scanf("%c%c",&k,&k);
 			getch(); //It is for hold the screen
 			break;
 		}
 		else
 		{
 			printf("\n     SORRY !!!! LOGIN IS UNSUCCESSFUL");
-			a++;
+			h++;
 			//getch(); //It is for hold the screen
 		}
 	}
-	while(a<=2);
-	if(a>2)
+	while(h<=2);
+	if(h>2)
 	{
 		printf("\n Sorry you have entered the incorrect password for three times. Press to continue");
-		scanf("%c%c",&r,&r);
+		scanf("%c%c",&k,&k);
 		//getch();
 	}
 }
@@ -131,7 +131,7 @@ void main()
 
 void insert_details()
 {
-	FILE *fp;
+	FILE *fa;
 	struct book b;
 	printf("Enter movie code :-");
 	scanf("%s", b.code);
@@ -142,39 +142,39 @@ void insert_details()
 	printf("Enter Ticket Price :-");
 	scanf("%d", &b.cost);
 	
-	fp=fopen("data.txt","a");
-	if(fp == NULL)
+	fa=fopen("data.txt","h");
+	if(fa == NULL)
 	{
 		printf("File not Found");
 	}
 	else
 	{
-		fprintf(fp,"%s %s %s %d \n", b.code,b.name,b.date,b.cost);
+		fprintf(fa,"%s %s %s %d \n", b.code,b.name,b.date,b.cost);
 		printf("Record insert Successfully");
 	}
 	printf("\n");
-	fclose(fp);
+	fclose(fa);
 }
 
 void find()
 {
 	struct book b;
-	FILE *fp;
+	FILE *fa;
 	char ch[20];
 	printf("Enter movie code:");
 	scanf("%s", ch);
 	
-	fp=fopen("data.txt","r");
-	if(fp == NULL)
+	fa=fopen("data.txt","k");
+	if(fa == NULL)
 	{
 		printf("file does not found !");
 		exit(0);
 	}
 	else
 	{
-		while(getc(fp) != EOF)
+		while(getc(fa) != EOF)
 		{
-			fscanf(fp,"%s %s %s %d", b.code, b.name, b.date, &b.cost);
+			fscanf(fa,"%s %s %s %d", b.code, b.name, b.date, &b.cost);
 			if(strcmp(b.code, ch)==0)
 			{
 				printf("\n Record Found\n");
@@ -185,68 +185,68 @@ void find()
 			}
 		}
 	}
-	fclose(fp);
+	fclose(fa);
 	printf("\n\t\tPress enter to continue....");
-	scanf("%c%c",&r,&r);
+	scanf("%c%c",&k,&k);
 }
 
 void viewAll()
 {
 	char ch;
-	FILE *fp;
-	fp=fopen("data.txt","r");
-	if(fp == NULL)
+	FILE *fa;
+	fa=fopen("data.txt","k");
+	if(fa == NULL)
 	{
 		printf("file does not found !!");
 		exit(0);
 	}
 	else
 	{
-		while((ch=fgetc(fp))!=EOF)
+		while((ch=fgetc(fa))!=EOF)
 		printf("%c", ch);
 	}
 	printf("\n\t\tPress enter to continue....");
-	scanf("%c%c",&r,&r);
-	fclose(fp);
+	scanf("%c%c",&k,&k);
+	fclose(fa);
 }
 
 void book_ticket()
 {
 	struct book b;
-	FILE *fp;
-	FILE *ufp;
+	FILE *fa;
+	FILE *ufa;
 	int total_seats, mobile_number, total_amount;
 	char name[20];
 	
 	char ch;   //It is used in displaying all movies
 	char movie_code[20];  // It is for searching
-	fp=fopen("data.txt","r");
-	if(fp==NULL)
+	fa=fopen("data.txt","k");
+	if(fa==NULL)
 	{
 		printf("file not found !!");
 		exit(1);
 	}
 	else
 	{
-		while((ch=fgetc(fp))!=EOF)
+		while((ch=fgetc(fa))!=EOF)
 		printf("%c",ch);
 	}
-	fclose(fp);
+	fclose(fa);
 	
 	printf("\n For Booking Ticket Choice Movie(Enter Movie Code First Letter Of Movie)\n");
 	printf("\n Enter movie code :");
 	scanf("%s", movie_code);
-	fp=fopen("data.txt","r");
-	if(fp==NULL)
+	fa=fopen("data.txt","k");
+	if(fa==NULL)
 	{
 		printf("file not found !");
 		exit(1);		
 	}
 	else
 	{
-		while(getc(fp) !=EOF)
+		while(getc(fa) !=EOF)
 		{
-			fscanf(fp,"%s %s %s %d",b.code,b.name, b.date,&b.cost);
+			fscanf(fa,"%s %s %s %d",b.code,b.name, b.date,&b.cost);
 			if(strcmp(b.code,movie_code)==0)
 			{
 				printf("\n Record Found \n");
@@ -275,39 +275,39 @@ void book_ticket()
 	printf("\n\t\tcost per ticket :%d", b.cost);
 	printf("\n\t\tTotal Amount :%d",total_amount);
 	
-	ufp=fopen("oldTransaction.txt","a");
-	if(ufp==NULL)
+	ufa=fopen("oldTransaction.txt","h");
+	if(ufa==NULL)
 	{
 		printf("\n File not Found");
 	}
 	else
 	{
-		fprintf(ufp, "%s %d %d %d %s %d \n",name, mobile_number,total_seats,total_amount, b.name,b.cost);
+		fprintf(ufa, "%s %d %d %d %s %d \n",name, mobile_number,total_seats,total_amount, b.name,b.cost);
 		printf("\n Record insert successfull to the old record file");
 	}
 	printf("\n");
 	printf("\n\t\tPress enter to continue....");
-	scanf("%c%c",&r,&r);
-	fclose(ufp);
-	fclose(fp);
+	scanf("%c%c",&k,&k);
+	fclose(ufa);
+	fclose(fa);
 }
 
 void old_record()
 {
 	char ch;
-	FILE *fp;
-	fp=fopen("oldTransaction.txt","r");
-	if(fp==NULL)
+	FILE *fa;
+	fa=fopen("oldTransaction.txt","k");
+	if(fa==NULL)
 	{
 		printf("File not found !");
 		exit(1);
 	}
 	else
 	{
-		while((ch=fgetc(fp))!=EOF)
+		while((ch=fgetc(fa))!=EOF)
 		printf("%c",ch);
 	}
 	printf("\n\t\tPress enter to continue...");
-	scanf("%c%c",&r,&r);
-	fclose(fp);
+	scanf("%c%c",&k,&k);
+	fclose(fa);
 }
