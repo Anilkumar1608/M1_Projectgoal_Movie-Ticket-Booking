@@ -16,6 +16,9 @@ Online movie  Ticket booking
    <img src="https://api.codiga.io/public/badge/user/github/Anilkumar1608?style=light" alt="codiga badge" />
 </a>
 
+![Screenshot (132)](https://user-images.githubusercontent.com/63450315/153568968-3a5f56bd-8e8c-4eaa-86f2-e8cd4a5b27c1.png)
+
+
 ## References
  
  https://itsourcecode.com/uml/online-movie-ticket-booking-system-use-case-diagram/
