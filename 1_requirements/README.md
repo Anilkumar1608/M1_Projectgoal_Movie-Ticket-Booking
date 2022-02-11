@@ -43,7 +43,3 @@
       * Application should be lightweight and give quick response.
       * The user's data should be kept safe.
  
-
-
-
-
