@@ -4,6 +4,7 @@ Online movie  Ticket booking
 ## Badges
 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b528397b37b5449787831c89afd1ef00)](https://app.codacy.com/gh/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking?utm_source=github.com&utm_medium=referral&utm_content=Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6db2357439a5496b9bde23db11274fa6)](https://www.codacy.com/gh/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking&amp;utm_campaign=Badge_Grade)
 
 [![Contribution check - Git inspector](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml/badge.svg)](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml)
