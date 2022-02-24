@@ -18,6 +18,7 @@ Online movie  Ticket booking
    <img src="https://api.codiga.io/public/badge/user/github/Anilkumar1608?style=light" alt="codiga badge" />
 </a>
 
+![Screenshot (134)](https://user-images.githubusercontent.com/63450315/155546620-7aed3d46-0c82-4674-8fdf-38fae60c86dc.png)
 
 
 ## References
