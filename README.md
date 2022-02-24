@@ -8,6 +8,8 @@ Online movie  Ticket booking
 
 [![Contribution check - Git inspector](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml/badge.svg)](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml)
 
+[![Static code - Cpp check](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/check.yml/badge.svg)](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/check.yml)
+
 ![code quality](https://api.codiga.io/project/31077/score/svg)
 
 ![code grade](https://api.codiga.io/project/31077/status/svg)
