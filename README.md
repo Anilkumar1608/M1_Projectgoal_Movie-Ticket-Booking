@@ -8,6 +8,8 @@ Online movie  Ticket booking
 
 [![Contribution check - Git inspector](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml/badge.svg)](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/Git.yml)
 
+[![Static code - Cpp check](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/check.yml/badge.svg)](https://github.com/Anilkumar1608/M1_Projectgoal_Movie-Ticket-Booking/actions/workflows/check.yml)
+
 ![code quality](https://api.codiga.io/project/31077/score/svg)
 
 ![code grade](https://api.codiga.io/project/31077/status/svg)
@@ -16,7 +18,7 @@ Online movie  Ticket booking
    <img src="https://api.codiga.io/public/badge/user/github/Anilkumar1608?style=light" alt="codiga badge" />
 </a>
 
-![Screenshot (132)](https://user-images.githubusercontent.com/63450315/153568968-3a5f56bd-8e8c-4eaa-86f2-e8cd4a5b27c1.png)
+![Screenshot (134)](https://user-images.githubusercontent.com/63450315/155546620-7aed3d46-0c82-4674-8fdf-38fae60c86dc.png)
 
 
 ## References
