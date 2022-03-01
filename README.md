@@ -18,7 +18,16 @@ Online movie  Ticket booking
    <img src="https://api.codiga.io/public/badge/user/github/Anilkumar1608?style=light" alt="codiga badge" />
 </a>
 
-![Screenshot (134)](https://user-images.githubusercontent.com/63450315/155546620-7aed3d46-0c82-4674-8fdf-38fae60c86dc.png)
+## Folder Structure
+Folder                   | Description
+-------------------------| -----------------------------------------
+`0_certificates`         | Certificates earned during the course
+`1_requirements`         | Documents detailing requirements and research
+`2_Design`               | Behavioural and Structural UML Diagrams(Both High Level and Low Level)
+`3_Implemenatation `     | All code and documentation
+`4_TestplanandOutput `| Documents with test plans and procedures and Output
+`5_Report`               | Documentation of whole project
+`6_Imagesandvideo`      | Code Execution Images and Videos
 
 
 ## References
