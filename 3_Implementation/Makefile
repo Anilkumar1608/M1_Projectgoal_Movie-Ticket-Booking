@@ -1,11 +1,25 @@
 #TargetName:Dependencies
 #<TAB>commands
 
-Build:booking_ticket.c
-	gcc booking_ticket.c -o booking_ticket.out
+PROJ_NAME = MOVie ticket booking
+SRC=main.c booking_ticket.c 
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
-Run:booking_ticket.out
-	./booking_ticket.out
+Build : $(SRC)  
+	gcc $(SRC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+
+Run :Build	
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 Clean:
-	rm -rf  *.o *.out *.i *.s
+	$(RM) $(call FixPath,*.out)
