@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: make all
-      run: make all -C 3_implementation
+      run: make all -C 3_Implementation
